@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+    img{
+      max-width: 50%;
+      max-height: 50%;
+      display: block;
+      }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Astronomy Picture Of The Day</title>
+    <h1 style="color:yellow;">Today's Picture is:</h1>
+    <p style="color:yellow;">{{ title }}</p>
+</head>
+<p style="color:yellow;">{{ explanation }}</p>
+
+<body style="background-color:black;">
+<img src="{{ media }}" class="center">
+<iframe width="560" height="315" src="{{media}}" class="center" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
