@@ -22,7 +22,7 @@ def links():
 
 @app.route("/apod")
 def apod():
-    apod = requests.get("https://api.nasa.gov/planetary/apod?api_key=aBqBMm12sPeFWcVTnoiDMeqcGJx3kMe7WF33Fgvw")
+    apod = requests.get("https://api.nasa.gov/planetary/apod?api_key=Your_Api_Key")
     apod_json = apod.json()
     title = apod_json['title']
     explanation = apod_json['explanation']
